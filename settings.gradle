@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS) // 这行强制要求所有仓库在settings中定义
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "RTNP"
+include ':app'

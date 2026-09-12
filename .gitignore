@@ -1,0 +1,37 @@
+# ========== 第一步：忽略一切 ==========
+*
+
+# ========== 明确排除脚本文件（保险）==========
+*.py
+*.sh
+*.bat
+*.cmd
+
+# ========== 第二步：放行构建脚本 ==========
+!build.gradle
+!settings.gradle
+!gradle.properties
+!gradlew
+!gradlew.bat
+!gradle/
+!gradle/wrapper/
+!gradle/wrapper/**
+!app/
+!app/build.gradle
+!app/build.gradle.kts
+!app/proguard-rules.pro
+
+# ========== 第三步：放行源码目录（逐级放行）==========
+!app/src/
+!app/src/main/
+!app/src/main/java/
+!app/src/main/java/**
+!app/src/main/kotlin/
+!app/src/main/kotlin/**
+!app/src/main/AndroidManifest.xml
+
+# ========== 第四步：放行文档 ==========
+!README.md
+!LICENSE
+!.gitignore
+!.gitattributes
